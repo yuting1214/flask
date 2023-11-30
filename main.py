@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     port_num = os.getenv("PORT")
-    return jsonify({"Choo Choo": f'PORT:{port_num}')
+    return jsonify({"Choo Choo": f'PORT:{port_num}'})
 
 
 if __name__ == '__main__':
