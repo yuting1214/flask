@@ -10,4 +10,5 @@ def index():
 
 
 if __name__ == '__main__':
+    print(f'PORT:{os.getenv("PORT")}')
     app.run(debug=True, port=os.getenv("PORT", default=5000))
